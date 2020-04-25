@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<!-- se agrego un una carpeta de imagenes de fondo, se escojio la imagen b1 de fondo final-->
+
+<body background="fondos/imagenes/b1.jpeg">
+    <CEnter>
+        <h1>CALCULADORA</h1>
+        <P>introdusca los valores que dese operar</P>
+        <br>
+    </CEnter>
+    <center>
+        <!--se agrego un formulario, una table donde se colocaron los valores y bariales -->
+        <table class="calculadora" colspan="4">
+            <form id="formulario">
+                <!-- se agrego el primer valor-->
+
+                <label> valor 1</label>
+                <input type="number" name="" id="valor 1" autofocus placeholder="escribe un numero">
+
+                <!--se agrego un boton que elimina los elementos de las casillas-->
+                <button onclick="limpiar();">eliminar datos</button>
+
+                <br>
+                <br>
+                <!-- se agrego el segundo valor-->
+                <label>valor 2</label>
+                <input type="number" name="" id="valor 2" autofocus placeholder="escribe un numero">
+
+                <br>
+                <br>
+                <!-- se colocaron los botones de operaciones matetematicas-->
+
+                <button type="button" onclick="sumar();">SUMAR</button>
+                <button type="button" onclick="restar();">RESTAR</button>
+                <button type="button" onclick="multiplicar();">MULTIPLICAR</button>
+                <button type="button" onclick="dividir();">DIVIDIR</button>
+                <p>RESULTADO: <span id="el-resultado"></span> </p>
+
+
+            </form>
+
+            <!-- se le intidoco que llamra a las junciones js-->
+            <script type="text/javascript" src="js/funciones.js">
+            </script>
+        </table>
+
+
+</body>
+
+</html>
+<!-- calculadora realizada por erineo de leon campos, como parte de tarea de la universidad -->
